@@ -17,7 +17,7 @@ import com.example.core.domain.User;
 import com.example.core.services.Neo4jUserDetailsService;
 
 @Service
-public class UserRepositoryImpl implements Neo4jUserDetailsService {
+public class Neo4jUserDetailsServiceImpl implements Neo4jUserDetailsService {
 
 	@Autowired private Neo4jOperations template;
 	

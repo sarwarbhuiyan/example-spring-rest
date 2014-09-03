@@ -1,5 +1,7 @@
 package com.example.rest.controllers;
 
+import org.apache.log4j.spi.LoggerFactory;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -24,6 +26,8 @@ import com.example.events.CreateAccountEvent;
 @Controller
 @RequestMapping("/accounts")
 public class AccountCommandsController {
+	
+	Logger logger = org.slf4j.LoggerFactory.getLogger(AccountCommandsController.class);
 
 	@Autowired
 	private AccountService accountService;

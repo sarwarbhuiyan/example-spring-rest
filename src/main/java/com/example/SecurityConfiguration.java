@@ -8,7 +8,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.servlet.configuration.EnableWebMvcSecurity;
 
-import com.example.core.services.impl.UserRepositoryImpl;
+import com.example.core.services.impl.Neo4jUserDetailsServiceImpl;
 
 @EnableWebMvcSecurity
 @Configuration
